@@ -1,19 +1,24 @@
 package Arrays;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Arrayss arr= new Arrayss();
 
+        int []numbers2= new int[5];
         int []numbers={1,2,3,4,5};
-       // int []numbers2= new int[5];
-      //  numbers2[0]=1;
+      //  numbers[2]=7;
 
-        for(int i =0 ; i<numbers.length;i++)
-            System.out.println("Index["+i+"]"+" = "+numbers[i]);
+      //  arr.input(numbers2);
+        //arr.update(numbers,4,7);
+        arr.delete(numbers,4);
 
-        for(int num :numbers)
-            System.out.println(num);
+        arr.Travesal(numbers);
+
+
+
 
 
 
