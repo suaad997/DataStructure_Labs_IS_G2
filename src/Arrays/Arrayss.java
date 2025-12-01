@@ -10,6 +10,10 @@ public class Arrayss {
         for(int i =0 ; i<a.length;i++)
             System.out.println("Index["+i+"]"+" = "+a[i]);
 
+    }
+    public void R_Travesal(int []a){
+        for(int i =a.length-1 ; i>=0;i--)
+            System.out.println("Index["+i+"]"+" = "+a[i]);
 
     }
     public void Travesal2(int []a){
@@ -33,5 +37,23 @@ public void update(int []a,int index, int nvalue){
             System.out.println("Index not found");
         else
             a[index]=0;
+    }
+
+
+    public void shiftLeft_Delete(int []a,int index){
+        for(int i=index; i<a.length-1;i++) {
+            a[i]=a[i+1];
+        }
+
+        a[a.length-1]=Integer.MIN_VALUE;
+
+    }
+
+
+    public int LinearSearch(int[]a,int svalue){
+        for( int i=0; i<a.length;i++)
+            if(a[i]==svalue)
+                return i;
+        return -1;
     }
 }

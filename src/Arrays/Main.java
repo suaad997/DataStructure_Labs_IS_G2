@@ -7,15 +7,27 @@ public class Main {
     public static void main(String[] args) {
         Arrayss arr= new Arrayss();
 
-        int []numbers2= new int[5];
         int []numbers={1,2,3,4,5};
-      //  numbers[2]=7;
+        int result=arr.LinearSearch(numbers,8);
+
+        if(result!=-1)
+        System.out.println("Value found at index:"+result );
+
+        else
+            System.out.println("Value not found");
+
+
+
+
+
+        //  numbers[2]=7;
 
       //  arr.input(numbers2);
         //arr.update(numbers,4,7);
-        arr.delete(numbers,4);
+        //arr.delete(numbers,4);
+      //  arr.shiftLeft_Delete(numbers,2);
 
-        arr.Travesal(numbers);
+       // arr.R_Travesal(numbers);
 
 
 
