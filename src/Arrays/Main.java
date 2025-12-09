@@ -7,8 +7,11 @@ public class Main {
     public static void main(String[] args) {
         Arrayss arr= new Arrayss();
 
-        int []numbers={1,2,3,4,5};
-        int result=arr.LinearSearch(numbers,8);
+        int []numbers={9,1,2,3,4,5,6,7,8};
+        Arrays.sort(numbers);
+        arr.Travesal(numbers);
+       // int result=arr.LinearSearch(numbers,8);
+        int result=arr.binarySearch(numbers,9);
 
         if(result!=-1)
         System.out.println("Value found at index:"+result );
