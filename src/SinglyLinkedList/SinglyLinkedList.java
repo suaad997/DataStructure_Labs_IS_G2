@@ -33,6 +33,7 @@ public E removeFirst(){
         }
         return delete;
     }
+
 public void addLast(E data){
     Node<E> newNode=new Node(data,null);
     if(isEmpty())
