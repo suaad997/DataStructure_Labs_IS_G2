@@ -2,17 +2,20 @@ package Stack;
 
 public class Main {
     public static void main(String[] args) {
-        LinkdStack<Integer> lstack =new LinkdStack<Integer>();
-        lstack.push(10);
-        lstack.push(20);
-        lstack.push(30);
-        lstack.push(50);
-        System.out.println("the top is "+lstack.top());
-        while (!lstack.isEmpty()){
-            System.out.println("element removed="+lstack.pop());
+
+        ArrayStack<Integer> aStack =new ArrayStack<Integer>(3);
+
+        //LinkdStack<Integer> aStack =new LinkdStack<Integer>();
+        aStack.push(10);
+        aStack.push(20);
+        aStack.push(30);
+        aStack.push(50);
+        System.out.println("the top is "+aStack.top());
+        while (!aStack.isEmpty()){
+            System.out.println("element removed="+aStack.pop());
         }
 
-        //lstack.display();
+        //aStack.display();
 
 
 
